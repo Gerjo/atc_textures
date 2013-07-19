@@ -10,10 +10,6 @@ This project is a side-artifact of my graduation project at Game Oven Studios. H
 
 Keywords: ATC_RGB_AMD, ATC_RGBA_EXPLICIT_ALPHA_AMD, ATC_RGBA_INTERPOLATED_ALPHA_AMD, Android Textures.
 
-Compatibility
-============
-This work is only tested on OS X 10.8 - I'll test/port to Linux when I get around.
-
 
 
 Usage:
@@ -24,7 +20,13 @@ Usage:
 
 Installation:
 ============
-I have attached a makefile, just type 'make' to compile with default settings. You might need to install libz, if you haven't already first.
+I have attached a makefile, just type 'make' to compile with default settings. You might need to install libz, if you haven't already.
+
+
+
+Compatibility
+============
+This work is only tested on OS X 10.8 - I'll test/port to Linux when I get around.
 
 
 
@@ -43,8 +45,13 @@ TODO:
 
 
 
-License
+License:
 ============
 I'm far from a licensing expert. The bits written by me are released under the MIT license, which is quite liberal - this includes main.cpp and makefile. All other code and binaries shall remain under their own respective licenses.
 
+
+
+Sample:
+============
+![Comparison of ATC formats](https://raw.github.com/Gerjo/atc_textures/master/comparison.png "Logo Title Text 1")
 
