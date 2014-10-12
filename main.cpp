@@ -184,10 +184,13 @@ int main(int argc, const char * argv[]) {
     
     // Write the header:
     fwrite((void*) &ktx, 1, sizeof(KtxFormat), out);
+    
+    // Write the data size:
+    fwrite((void*) &(qualcommTextureOutput.nDataSize), 1, sizeof(unsigned int), out);
 
     // Write actual data:
     fwrite(qualcommTextureOutput.pData, 1, qualcommTextureOutput.nDataSize, out);
     
-    cout << " - done (" << (sizeof(KtxFormat) + qualcommTextureOutput.nDataSize) << " bytes) !" << endl;
+    cout << " - done (" << (sizeof(KtxFormat) + sizeof(unsigned int) + qualcommTextureOutput.nDataSize) << " bytes) !" << endl;
     return EXIT_SUCCESS;
 }
