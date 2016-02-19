@@ -161,7 +161,7 @@ int main(int argc, const char * argv[]) {
     qualcommTextureOutput.pData = (unsigned char*) malloc(qualcommTextureOutput.nDataSize);
     
     if(Qonvert(&qualcommTextureInput, &qualcommTextureOutput) != Q_SUCCESS) {
-        error("The first Qonvert call failed.");
+        error("The second Qonvert call failed.");
     }
 
     // http://www.khronos.org/registry/gles/extensions/AMD/AMD_compressed_ATC_texture.txt
